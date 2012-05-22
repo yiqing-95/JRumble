@@ -1,0 +1,31 @@
+
+download and extract it to your extensions dir
+
+and then use it as other standard widgets ,  you can  rumble any html elements
+just give a css selector , that's all just try it  in you view or layout file
+
+if you don't give a selector , i assume  that you want initialize the original plugin  manually .
+and i just register the necessary js file for you .
+
+ for more advanced usage please see the doc http://jackrugile.com/jrumble/
+
+
+<?php
+/**
+ * User: yiqing
+ * Date: 12-2-1
+ * Time: 下午5:18
+ */
+$this->widget('ext.jrumble.JRumble', array(
+  'selector'=>'#test',
+    'options'=>array(
+     'speed'=>50,
+    )
+));
+?>
+
+<div class="well" id="test">
+
+ hi  here you go !
+</div>
+
